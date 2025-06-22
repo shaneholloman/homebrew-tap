@@ -9,16 +9,16 @@ class airchief < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shaneholloman/airchief/releases/download/0.1.0/airchief-darwin-x64.zip"
-      sha256 "56407ce2fa06530455399c8aa8cd1c094c00e3325857d96e1e4b6a7e77ebaf4e"
+      url "https://github.com/shaneholloman/airchief/releases/download/v0.3.0/airchief-darwin-x64.zip"
+      sha256 "4b7dcfb3b41a9a072e46643692bc18c3b0c5677e0b419124ccef5f8e5d54768d"
 
       def install
         bin.install "airchief"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shaneholloman/airchief/releases/download/0.1.0/airchief-darwin-arm64.zip"
-      sha256 "f18f158f86901518094ef43d22c4c9c07eea3217280020f04f2429bcc5bab395"
+      url "https://github.com/shaneholloman/airchief/releases/download/v0.3.0/airchief-darwin-arm64.zip"
+      sha256 "d89fa2f760aa087584d91fe32a94cb11209985aca503c373283606e5e127582a"
 
       def install
         bin.install "airchief"
@@ -28,15 +28,8 @@ class airchief < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/shaneholloman/airchief/releases/download/0.1.0/airchief-linux-x64.zip"
-      sha256 "08cae98cdc70891032a6bc5160c091294b2cd8dba6960c96202c60205cf44671"
-      def install
-        bin.install "airchief"
-      end
-    end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/shaneholloman/airchief/releases/download/0.1.0/airchief-linux-arm64.zip"
-      sha256 "943bf4e0076a11c078e652844f12630edc0aae32b4e1832c3b91fb4aa9ab2c8b"
+      url "https://github.com/shaneholloman/airchief/releases/download/v0.3.0/airchief-linux-x64.zip"
+      sha256 "9db1c73e4daab7abfece44f5b9db02307669052c83d83222b0bc4add7656ec3d"
       def install
         bin.install "airchief"
       end
